@@ -1,0 +1,1 @@
+enum RouteIconType { on, off }
