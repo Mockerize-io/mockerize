@@ -10,7 +10,7 @@ Future<bool> isPortInUse(int port, {dynamic address}) async {
       address ?? InternetAddress.anyIPv4,
       port,
     );
-  } on SocketException catch (e) {
+  } on SocketException {
     // If an exception occurs, it's likely because the port is in use (or the port is privileged and thus wouldn't really be usable anyway)
     isInUse = true;
   } finally {

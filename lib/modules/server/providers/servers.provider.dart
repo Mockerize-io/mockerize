@@ -44,7 +44,7 @@ class ServersProvider extends StateNotifier<Map<String, MockerizeServer>> {
     if (query != null) {
       servers = servers
           .where((element) =>
-              element.name.toLowerCase().contains(query!.toLowerCase()))
+              element.name.toLowerCase().contains(query.toLowerCase()))
           .toList();
     }
 

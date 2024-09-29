@@ -59,17 +59,17 @@ class DashedPainter extends CustomPainter {
       paint.color = color;
     }
 
-    Path _path;
+    Path path;
     if (customPath != null) {
-      _path = dashPath(
+      path = dashPath(
         customPath!(size),
         dashArray: CircularIntervalList(dashPattern),
       );
     } else {
-      _path = _getPath(size);
+      path = _getPath(size);
     }
 
-    canvas.drawPath(_path, paint);
+    canvas.drawPath(path, paint);
   }
 
   /// Returns a [Path] based on the the [borderType] parameter
@@ -157,10 +157,10 @@ class DashedPainter extends CustomPainter {
 
   @override
   bool shouldRepaint(DashedPainter oldDelegate) {
-    return oldDelegate.strokeWidth != this.strokeWidth ||
-        oldDelegate.color != this.color ||
-        oldDelegate.dashPattern != this.dashPattern ||
-        oldDelegate.padding != this.padding ||
-        oldDelegate.borderType != this.borderType;
+    return oldDelegate.strokeWidth != strokeWidth ||
+        oldDelegate.color != color ||
+        oldDelegate.dashPattern != dashPattern ||
+        oldDelegate.padding != padding ||
+        oldDelegate.borderType != borderType;
   }
 }

@@ -6,7 +6,6 @@ import '../shared/add_response.dart';
 import '../shared/add_route_btn.dart';
 import '../shared/submit_btn.dart';
 import '../utils/load_app.dart';
-import '../utils/screen_size.dart';
 
 Future<void> createRouteTest() async {
   testWidgets('Create Route Smoke Test', (WidgetTester tester) async {

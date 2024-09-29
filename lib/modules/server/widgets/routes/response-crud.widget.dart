@@ -108,7 +108,7 @@ class _ResponseCrudState extends ConsumerState<ResponseCrud> {
 
   void setStatus(Status newStatus) {
     setState(() {
-      status = newStatus!;
+      status = newStatus;
     });
   }
 

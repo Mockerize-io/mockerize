@@ -12,7 +12,6 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 import 'dart:async';
-import 'dart:ui';
 
 import 'package:flutter/services.dart';
 
@@ -126,7 +125,7 @@ class WindowSizeChannel {
       const MethodChannel(_windowSizeChannelName);
 
   /// The static instance of the menu channel.
-  static final WindowSizeChannel instance = new WindowSizeChannel._();
+  static final WindowSizeChannel instance = WindowSizeChannel._();
 
   /// Returns a list of screens.
   Future<List<Screen>> getScreenList() async {

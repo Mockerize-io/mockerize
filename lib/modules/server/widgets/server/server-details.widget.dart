@@ -55,7 +55,7 @@ class _ServerDetailsState extends ConsumerState<ServerDetails> {
                 ],
               )
             : Details(
-                server: server!,
+                server: server,
                 serverId: widget.serverId,
               )
         : const SizedBox();

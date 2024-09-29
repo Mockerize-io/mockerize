@@ -2,7 +2,6 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:collection/collection.dart';
-import 'package:flutter/material.dart';
 import 'package:mockerize/core/utils/sanitize.dart';
 import 'package:mockerize/modules/server/models/endpoint.dart';
 import 'package:mockerize/modules/server/models/header.dart';

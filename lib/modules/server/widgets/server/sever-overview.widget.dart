@@ -137,7 +137,7 @@ class _ServerOverviewState extends ConsumerState<ServerOverview> {
                               children: [
                                 Flexible(
                                   child: ServerNameDisplay(
-                                    name: widget.server!.name,
+                                    name: widget.server.name,
                                     isActive: isActive,
                                     size: size,
                                     localSize: localSize,
